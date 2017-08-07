@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "precommit": "npm run folder",
+    "shout": "echo lololol",
     "folder": "node ./tasks/test.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "pre-commit": [
+    "shout"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://yiwenl@github.com/yiwenl/gitHookTest.git"
@@ -19,6 +22,7 @@
   },
   "homepage": "https://github.com/yiwenl/gitHookTest#readme",
   "devDependencies": {
-    "fs-extra": "^4.0.1"
+    "fs-extra": "^4.0.1",
+    "pre-commit": "^1.2.2"
   }
 }

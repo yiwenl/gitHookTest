@@ -4,6 +4,9 @@ const fs = require('fs-extra');
 
 fs.emptyDir('./test', (err) => {
 	if(err) {
-		console.log('Err');
+		console.log('Error', err);
 	}
+
+
+	console.log('Folder created !');
 });

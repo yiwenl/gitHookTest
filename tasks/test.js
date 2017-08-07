@@ -7,6 +7,12 @@ fs.emptyDir('./test', (err) => {
 		console.log('Error', err);
 	}
 
+	fs.writeJson('./test/test.json', {value:Math.random()}, (err) => {
+		if(err) {
+			console.log('Error', err);
+			return;
+		}
 
-	console.log('Folder created !');
+		console.log('JSON Created');
+	});
 });

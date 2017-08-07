@@ -1,0 +1,10 @@
+/*style.css*/
+
+html, body {
+	background:black;
+}
+
+.hello {
+    color: red;
+	background: url('./logo_vr.png');
+ }
